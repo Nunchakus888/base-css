@@ -1,0 +1,35 @@
+﻿/********************************************************************************
+class: basecss.input.text
+********************************************************************************/
+.ss-input-text {
+    background: #3b4145;
+    border: 1px solid transparent;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    padding: 0 3px;
+
+    color: #fff3dd;
+}
+
+.ss-input-text-sm {
+    height: 24px;
+}
+
+.ss-input-text-lg {
+    height: 30px;
+}
+
+.ss-input-text:hover {
+    background: #42494e;
+    border-color: #697277;
+}
+
+.ss-input-text:focus {
+    background: #161819;
+    border: 1px solid #0d7b7b;
+    outline:  1px solid transparent;
+}
+
+.ss-input-text[disabled] {
+    background: #2b2e2f;
+}

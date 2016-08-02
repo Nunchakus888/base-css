@@ -1,0 +1,15 @@
+/********************************************************************************
+class: basecss.Panel
+********************************************************************************/
+
+.ss-panel-head {
+    font-size:14px;
+    color:#ffebc8;
+    line-height:14px;
+    text-align:left;
+    padding: 10px 15px;
+    background-color: #1d595b;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px
+}

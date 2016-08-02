@@ -1,0 +1,32 @@
+﻿{
+    "name": "Background",
+    /* Class， 依据画面的菜单结构定义，用“.”链接亲子菜单项的ID，{parentMenu.id}.{childMenu.id}......*/
+    "class": "basecss.textandcolors",
+    "description": "description",
+    "displayOrder": "0",
+    "history": [
+        {
+            /*对应版本，格式限定为浮点数，只有一个小数点*/
+            "version": "0.1",
+            /* 指定范例页面，html，会渲染器内容到画面上，共同UI以外，需要对其展示的样式请使用内嵌Style */
+            "sample": "background01.html",
+            /* 指定代码文件， UTF-8编码任何格式，只显示其内容 */
+            "code": "background01.html",
+            /* CodeType supported by default include
+                "bsh", "c", "cc", "cpp", "cs", "csh", "cyc", "cv", "htm", "html",
+                "java", "js", "m", "mxml", "perl", "pl", "pm", "py", "rb", "sh",
+                "xhtml", "xml", "xsl".
+                用于设置代码高亮风格，不在意专属关键字的样式的话，类C语言之间可以随意设置
+            */
+            "codeType": "html",
+            /* 指定Css文件路径 */
+            "cssFile": "css/ss_common_style_0_1.css"
+        }
+        //{
+        //    "version": "0.2",
+        //    "sample": "background01.html",
+        //    "code": "background01.html",
+        //    "codeType": "html"
+        //}
+    ]
+}

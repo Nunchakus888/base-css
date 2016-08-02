@@ -1,0 +1,16 @@
+﻿/********************************************************************************
+class: basecss.Button
+********************************************************************************/
+
+
+.ss-label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+    font-family:MicrosoftYaHei;
+	font-size:14px;
+	color:#7b8082;
+	line-height:14px;
+	text-align:left;
+}
+

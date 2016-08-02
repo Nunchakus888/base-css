@@ -1,0 +1,72 @@
+﻿<header class="app-bar fixed-top navy">
+    <div class="container">
+        <ul class="columns app-bar-menu small-dropdown">
+            <li class="{{item.class}}" ng-repeat="item in mainMenu | orderBy: 'displayOrder'" tag="{{item.tag}}">
+                <span ng-if="item.type==='divider'" class="app-bar-divider"></span>
+                <a ng-if="item.type!=='divider'" class="{{item.memberClass}}" ng-bind="item.displayName" ng-click="onClickMainMenuItem(item)"></a>
+                <ul ng-if="item.members && item.members.length > 0" class="d-menu" data-role="dropdown" data-no-close="true">
+                    <li class="{{subItem.class}}" ng-repeat="subItem in item.members | orderBy: displayOrder" tag="{{subItem.tag}}">
+                        <a ng-if="subItem.type!=='divider'" class="{{subItem.memberClass}}" ng-bind="subItem.displayName" ng-click="onClickMainMenuItem(subItem)"></a>
+                        <ul ng-if="subItem.members && subItem.members.length > 0" class="d-menu" data-role="dropdown">
+                            <li class="{{subsubItem.class}}" ng-repeat="subsubItem in subItem.members | orderBy: displayOrder" tag="{{subsubItem.tag}}">
+                                <a ng-if="subsubItem.type!=='divider'" ng-bind="subsubItem.displayName" ng-click="onClickMainMenuItem(subsubItem)"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<div ng-if="!selectedMenuItem" class="container page-content" style="padding-top: 60px;">
+    <h1>Welcome!</h1>
+
+</div>
+
+<div ng-if="selectedMenuItem" class="container page-content" style="padding-top: 60px;">
+
+    <div data-role="dialog" id="dialog" class="padding20 dialog alert" data-close-button="true" data-type="alert">
+        <h1 ng-bind="dialogVm.title"></h1>
+        <p ng-bind="dialogVm.message"></p>
+        <span class="dialog-close-button"></span>
+    </div>
+
+    <span>历史版本：</span>
+    <div class="input-control select">
+        <select ng-model="vm.selectedVersion" ng-change="onChangeCssVersion()" ng-value="history.version" ng-options="history.displayName for history in historyMenu"></select>
+    </div>
+    <input type="button" ng-click="onClickApplyCss($event)" value="Apply Css">
+    <input type="button" ng-click="onClickDownloadCss($event)" value="Download Css">
+    <h6 ng-bind="vm.selectedVersion.description"></h6>
+
+    <h1 ng-bind="selectedMenuItem.displayName"></h1>
+    <h2 ng-bind-template="控件Class: {{selectedMenuItem.tag}}"></h2>
+
+    <div class="margin20 no-margin-left no-margin-right sub-header text-light" ng-bind="selectedMenuItem.description"></div>
+
+    <div ng-repeat="component in componentList | orderBy: 'displayOrder'">
+        <!--<span>{{component.displayOrder}}</span>-->
+        <h4 ng-bind="component.name"></h4>
+        <h6 ng-bind="component.description"></h6>
+        <div class="example" data-text="example" ng-bind-html="getHistoryByVersion(component.history, vm.selectedVersion.version).loadedSample" style="background: black; padding-bottom: 35px;">
+
+        </div>
+
+        <div class="accordion" data-role="accordion">
+            <div class="frame">
+                <div class="heading">点击展开代码</div>
+                <div class="content">
+                    <div class="example" data-text="code">
+                        <pre class="prettyprint linenums lang-{{getHistoryByVersion(component.history, vm.selectedVersion.version).codeType}}" ng-bind="getHistoryByVersion(component.history, vm.selectedVersion.version).loadedCode"></pre>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+

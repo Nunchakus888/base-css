@@ -1,0 +1,74 @@
+﻿{
+    "mainMenu": [
+        {
+            "id": "basecss",
+            "displayName": "Base Css",
+            "displayOrder": 0,
+            "members": [
+                {
+                    "id": "textandcolors",
+                    "displayName": "Text & Colors",
+                    "description": "基础文字以及颜色的Css类，无Javascript实现。",
+                    "displayOrder": 0,
+                    "members": [ ]
+                },
+                {
+                    "id": "buttons",
+                    "displayName": "Buttons",
+                    "description": "定义按钮的悬浮，获取焦点，按下的样式Css类，无Javascript实现。",
+                    "displayOrder": 1,
+                    "members": [ ]
+                },
+                {
+                    "id": "inputs",
+                    "displayName": "Inputs",
+                    "displayOrder": 2,
+                    "members": [
+                        {
+                            "id": "text",
+                            "displayName": "Input Text",
+                            "displayOrder": 2,
+                            "members": [ ]
+                        }
+                    ]
+                },
+                {
+                    "id": "label",
+                    "displayName": "Label",
+                    "displayOrder": 3,
+                    "members": []
+                },
+                {
+                    "id": "list",
+                    "displayName": "List",
+                    "displayOrder": 4,
+                    "members": []
+                },
+                {
+                    "id": "panel",
+                    "displayName": "Panel",
+                    "displayOrder": 5,
+                    "members": []
+                }
+            ]
+        },
+        {
+            "type": "divider",
+            "displayOrder": 1
+        }
+    ],
+    "historyMenu": [
+        {
+            "id": "0",
+            "displayName": "0.1",
+            "version": "0.1",
+            "description": "Version 0.1 description"
+        },
+        {
+            "id": "0",
+            "displayName": "0.2",
+            "version": "0.2",
+            "description": "Version 0.2 description"
+        }
+    ]
+}

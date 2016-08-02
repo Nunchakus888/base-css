@@ -1,0 +1,100 @@
+﻿/********************************************************************************
+class: basecss.Text
+********************************************************************************/
+
+input, textarea, keygen, select, button,
+.body-font-family {
+    font-family: MicrosoftYaHei;
+}
+
+.ss-text-primary {
+    color: #ffda9a;
+}
+
+.ss-text-secondary {
+    color: #ffebc8;
+}
+
+.ss-text-extra {
+    color: #7b8082;
+}
+
+.ss-text-lg {
+    line-height: 18px;
+    font-size: 18px;
+}
+
+.ss-text-sm {
+    line-height: 14px;
+    font-size: 14px;
+}
+
+.ss-text-xs {
+    line-height: 12px;
+    font-size: 12px;
+}
+
+.ss-text-warning {
+    color: #fe900d;
+}
+
+.ss-text-danger {
+    color: #ff3b54;
+}
+
+.ss-text-info {
+    color: #38caca;
+}
+
+a.ss-primary {
+    text-decoration: none;
+    color: #43adff;
+}
+
+a.ss-primary:hover {
+    color: #79c3ff;
+}
+
+a.ss-primary:focus {
+    color: #1781D3;
+}
+
+a.ss-primary[disabled] {
+    text-decoration: none;
+    color: #535353;
+}
+
+a.ss-extra {
+    text-decoration: none;
+    color:#ffebc8;
+}
+
+a.ss-extra:hover {
+    color:#ffda9a;
+}
+
+a.ss-extra:focus {
+    text-decoration: none;
+    color:#d69b34;
+}
+
+a.ss-extra[disabled] {
+    text-decoration: none;
+    color:#535353;
+}
+
+/* add space between text and underline of an <A> element */
+a.ss-add-space {
+    text-decoration: none;
+    position: relative;
+}
+a.ss-add-space:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+/*end space between text and underline of an <A> element*/

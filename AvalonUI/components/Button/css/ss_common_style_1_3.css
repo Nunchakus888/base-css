@@ -1,0 +1,91 @@
+﻿/********************************************************************************
+class: basecss.Button
+********************************************************************************/
+.ss-btn {
+    height: 24px;
+    width: 70px;
+    border: none;
+    font-family:MicrosoftYaHei;
+    font-size:14px;
+    line-height:14px;
+    text-align: center;
+}
+
+.ss-btn-sm {
+    width: 60px;
+    height: 24px;
+    border: none;
+    font-family:MicrosoftYaHei;
+    font-size:14px;
+    line-height:14px;
+    text-align: center;
+}
+
+.ss-btn-info {
+    background: #0d7b7b;
+    color:#ffebc8;
+}
+
+.ss-btn-info:hover,
+.ss-btn-info.hover {
+    background: #179595;
+}
+
+.ss-btn-info:active,
+.ss-btn-info.active {
+    background: #0d6060;
+}
+
+.ss-btn-danger {
+    color:#ffebc8;
+    background: #c03647;
+}
+
+.ss-btn-danger:hover,
+.ss-btn-danger.hover {
+    background: #d23044;
+}
+
+.ss-btn-danger:active,
+.ss-btn-danger.active {
+    background: #a7172a;
+}
+
+.ss-btn-warning {
+    color:#1b1b1b;
+    background: #f38b1e;
+}
+
+.ss-btn-warning:hover,
+.ss-btn-warning.hover {
+    background: #ffa13e;
+}
+
+
+.ss-btn-warning:active,
+.ss-btn-warning.active {
+    color:#000000;
+    background: #b47010;
+}
+
+.ss-btn[disabled],
+.ss-btn-sm[disabled] {
+    color:#7b8082;
+    background: #35393b;
+}
+
+.ss-btn-gray {
+    background: #4b4d50;
+    color:#fff9ee;
+}
+
+.ss-btn-gray:hover,
+.ss-btn-gray.hover {
+    background: #6d7075;
+}
+
+.ss-btn-gray:active,
+.ss-btn-gray.active {
+    background: #0d6060;
+    color:#ffebc8;
+}

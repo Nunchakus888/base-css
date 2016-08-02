@@ -1,0 +1,24 @@
+/********************************************************************************
+class: basecss.List
+********************************************************************************/
+
+.ss-list-group {
+    font-size: 14px;
+    color: #ffda91;
+
+}
+
+.ss-list-item {
+    list-style: none;
+    line-height: 24px;
+    padding: 3px 10px;
+}
+.ss-list-item:hover {
+    background-color: #1d4243!important;
+}
+.ss-list-group .ss-list-item:nth-child(odd) {
+    background-color: #191b1c;
+}
+.ss-list-group .ss-list-item:nth-child(even) {
+    background-color: #232628;
+}

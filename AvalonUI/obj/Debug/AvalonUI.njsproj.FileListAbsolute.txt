@@ -1,0 +1,2 @@
+D:\Sumscope\AvalonUI\AvalonUI\AvalonUI\obj\Debug\AvalonUI.njsprojResolveAssemblyReference.cache
+D:\Sumscope\AvalonUI\AvalonUI\AvalonUI\bin\Microsoft.NodejsTools.WebRole.dll

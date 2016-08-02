@@ -1,0 +1,24 @@
+{
+  "name": "AvalonUI",
+  "version": "0.0.0",
+  "description": "AvalonUI",
+  "main": "server.js",
+  "author": {
+    "name": "Wei Lai",
+    "email": ""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.14.0",
+    "express-domain-middleware": "^0.1.0",
+    "express-log-url": "^1.0.4",
+    "rd": "0.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.11",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2"
+  }
+}
